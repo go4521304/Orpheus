@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
         if (time < 0)
         {
             // Processing
-            Debug.Log("Test");
+            if (key != KEY.None)
+                Debug.Log(key);
 
             time = 1;
             key = KEY.None;
