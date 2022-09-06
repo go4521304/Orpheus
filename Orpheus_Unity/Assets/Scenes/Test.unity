@@ -238,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bridge: {fileID: 6310904487360497452, guid: 9cd994eb5a5885e41b09dcf7ec43cfb3, type: 3}
   length: 800
+  speed: 1.88
   bridges:
   - {fileID: 1332997738}
 --- !u!4 &605116992
