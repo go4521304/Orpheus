@@ -1,0 +1,6 @@
+type_name_#
+
+type abbreviation
+conv	conversation
+sht	short text (shouts, noises, etc)
+fi	floor identifier

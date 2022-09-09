@@ -1,0 +1,7 @@
+anim_character name_action_#
+
+action abbreviation
+atk1	attack1
+atk2	attack2
+bs	backstep
+std	standing

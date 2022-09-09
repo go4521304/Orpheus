@@ -1,0 +1,7 @@
+type_name_#
+
+type abbreviation
+br	breakable
+ubr	unbreakable
+
+if breakable, may contain item, buff, debuff, etc.

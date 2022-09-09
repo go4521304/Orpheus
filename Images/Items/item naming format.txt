@@ -1,0 +1,15 @@
+type_name_rarity_#
+
+types abbreviation
+equip	equip
+wp	weapon
+buff	buff
+food	food
+up	upgrade
+
+
+rarity abbreviation
+n	normal
+r	rare
+u	unique
+l	legendary

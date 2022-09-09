@@ -1,0 +1,7 @@
+type_name_#
+
+type abbreviation
+
+content	content
+tv	tv
+th	theatro

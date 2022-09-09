@@ -1,0 +1,7 @@
+type_name_#
+
+type abbreviation
+bg	background
+main	main
+sub	sub
+tile	tile

@@ -1,0 +1,10 @@
+ch_character name_action_#
+
+character name abbreviation
+doll	raindoll
+wolf	mother wolf
+
+action abbreviation
+atk	attack
+bs	backstep
+std	standing

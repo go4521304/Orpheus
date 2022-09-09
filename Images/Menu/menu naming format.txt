@@ -1,0 +1,6 @@
+type_name_#
+
+type abbreviation
+
+mm	main menu
+pm	pause menu
