@@ -5,3 +5,4 @@ type abbreviation
 content	content
 tv	tv
 th	theatro
+sample	sample
