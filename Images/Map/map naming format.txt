@@ -5,3 +5,4 @@ bg	background
 main	main
 sub	sub
 tile	tile
+cc	curtain call
