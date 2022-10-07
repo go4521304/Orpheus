@@ -1,0 +1,7 @@
+type_name_#
+
+types
+
+hit
+slice
+miss
