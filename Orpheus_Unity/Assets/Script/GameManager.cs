@@ -32,12 +32,11 @@ public class GameManager : MonoBehaviour
     private KEY key = KEY.None;
 
     [SerializeField] private int Bpm = 60;
-    [SerializeField] private double Tempo = 1;
+    //[SerializeField] private double Tempo = 1;
 
     private double timeGap;
-
     private double time = 1;
-
+    public int getBpm() { return Bpm; }
 
     private void Awake()
     {
@@ -56,7 +55,7 @@ public class GameManager : MonoBehaviour
 
         tickEvent = new TickEvent();
 
-        timeGap = (Bpm / 60) * Tempo;
+        timeGap = 60 / Bpm;
         time = timeGap;
     }
 

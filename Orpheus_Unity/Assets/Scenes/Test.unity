@@ -386,8 +386,7 @@ MonoBehaviour:
   tickEvent:
     m_PersistentCalls:
       m_Calls: []
-  Bpm: 60
-  Tempo: 1
+  Bpm: 145
 --- !u!4 &1806744013
 Transform:
   m_ObjectHideFlags: 0
