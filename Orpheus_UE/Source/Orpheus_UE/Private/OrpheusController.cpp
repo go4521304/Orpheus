@@ -47,6 +47,9 @@ void AOrpheusController::SetupInputComponent()
 
 void AOrpheusController::Move(const FInputActionValue& Value)
 {
-	FVector2D asix = Value.Get<FVector2D>();
+	FVector asix = Value.Get<FVector>();
 	UE_LOG(LogTemp, Log, TEXT("Input Action: %s"), *asix.ToString());
+
+	GetPawn()->AddMovementInput(asix, 1);
+
 }
