@@ -34,7 +34,7 @@ private:
 	class UStaticMeshComponent* StaticMeshComponent;
 
 	UPROPERTY(EditAnywhere)
-		class UStaticMesh* pointMesh;
+	class UStaticMesh* pointMesh;
 
 protected:
 	// Called when the game starts or when spawned
@@ -43,6 +43,6 @@ protected:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void OnConstruction(const FTransform& Transform) override;
+	//virtual void OnConstruction(const FTransform& Transform) override;
 
 };
