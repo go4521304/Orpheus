@@ -6,6 +6,8 @@
 #include "InputAction.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "EngineUtils.h"
+#include "MapPlatform.h"
 
 AOrpheusController::AOrpheusController()
 {
@@ -32,6 +34,14 @@ void AOrpheusController::BeginPlay()
 	{
 		Subsystem->AddMappingContext(DefaultMappingContext, 0);
 	}
+
+	for (const auto& it : TActorRange<AMapPlatform>(GetWorld()))
+	{
+		Platform = it;
+	}
+	FVector pos = Platform->GetPosition(curRow, curCol);
+	pos.Z = GetPawn()->GetActorLocation().Z;
+	GetPawn()->SetActorLocation(pos);
 }
 
 void AOrpheusController::SetupInputComponent()
@@ -51,6 +61,15 @@ void AOrpheusController::Move(const FInputActionValue& Value)
 
 	UE_LOG(LogTemp, Log, TEXT("Input Action: %s"), *asix.ToString());
 
-	//GetPawn()->AddActorLocalOffset(asix);
-	GetPawn()->AddMovementInput(asix);
+	uint8 tempRow = curRow + asix.Y, tempCol = curCol + asix.X;
+
+	curRow += asix.Y;
+	curCol += asix.X;
+
+	FVector pos = Platform->GetPosition(curRow, curCol);
+
+	pos.Z = GetPawn()->GetActorLocation().Z;
+	GetPawn()->SetActorLocation(pos);
+
+	UE_LOG(LogTemp, Log, TEXT("Row: %d, Col: %d"), curRow, curCol);
 }

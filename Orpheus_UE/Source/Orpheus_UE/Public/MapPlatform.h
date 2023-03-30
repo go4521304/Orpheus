@@ -16,33 +16,22 @@ public:
 	AMapPlatform();
 
 	// 바닥 세팅
-	UPROPERTY(EditInstanceOnly, Category = "Platform Setting", meta = (DisplayName = "행 개수", ClampMin = 1))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Platform Setting", meta = (DisplayName = "행 개수", ClampMin = 1))
 	uint8 rowNum = 1;
 
-	UPROPERTY(EditInstanceOnly, Category = "Platform Setting", meta = (DisplayName = "열 개수", ClampMin = 1))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Platform Setting", meta = (DisplayName = "열 개수", ClampMin = 1))
 	uint8 colNum = 1;
 
-	// 메시 지정
-	UPROPERTY(EditInstanceOnly, Category = "Platform Setting", meta = (DisplayName = "종류"))
-	class UMaterialInterface* Material;
-
-	UPROPERTY(VisibleAnywhere)
-	TArray<class AActor*> points;
-
-private:
-	UPROPERTY()
-	class UStaticMeshComponent* StaticMeshComponent;
-
-	UPROPERTY(EditAnywhere)
-	class UStaticMesh* pointMesh;
+	UFUNCTION(BlueprintImplementableEvent)
+	FVector GetPosition(uint8 row, uint8 col);
 
 protected:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	class UStaticMeshComponent* StaticMeshComponent;
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	//virtual void OnConstruction(const FTransform& Transform) override;
-
 };

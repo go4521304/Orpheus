@@ -32,4 +32,8 @@ protected:
 	virtual void BeginPlay();
 
 	void Move(const FInputActionValue& Value);
+
+	class AMapPlatform* Platform;
+
+	uint8 curRow = 0, curCol = 0;
 };
