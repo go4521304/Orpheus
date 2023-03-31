@@ -35,5 +35,5 @@ protected:
 
 	class AMapPlatform* Platform;
 
-	uint8 curRow = 0, curCol = 0;
+	uint8 curRow = 1, curCol = 0;
 };

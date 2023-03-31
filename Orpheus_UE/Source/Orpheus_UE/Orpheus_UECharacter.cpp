@@ -38,7 +38,7 @@ AOrpheus_UECharacter::AOrpheus_UECharacter()
 	CameraBoom->SetUsingAbsoluteRotation(true); // Don't want arm to rotate when character does
 	CameraBoom->TargetArmLength = 400.f;
 	CameraBoom->SetRelativeLocation(FVector(200.f, 0.f, 0.f));
-	CameraBoom->SetRelativeRotation(FRotator(-30.f, -90.f, 0.f));
+	CameraBoom->SetRelativeRotation(FRotator(-10.f, -90.f, 0.f));
 	CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
 
 	// Create a camera...
