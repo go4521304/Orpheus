@@ -13,14 +13,19 @@ define a = Character('관객', color="#da4a26")
 # 여기에서부터 게임이 시작합니다.
 label start:
 
+    scene btv1 with fade 
     "0. Eschatos"
     "..."
+    show tele with dissolve
     "지지지직"
+    show teles1 with dissolve
     "텔레비전이 켜진다. 이후 소음이 들려온다."
     a "비웃음, 웃음소리, 비명 소리, 깨지는 소리가 들려온다"
     "텔레비전 클로즈 업"
+    show sample_tv opening_1 at truecenter with dissolve
     "(DEVIL TV)"
     "새빨간 텔레비전에서 흥겨운 아나운서가 이야기를 전하고 있다"
+    show sample_tv opening_2 at truecenter with dissolve
     m "하하하, 안녕하세요 지옥의 주민 여러분! 하이고! 600년만에 방송이네요!"
     m "안방 극장, 에스카토스! 시즌 666이 이제 곧 시작하려고 합니다!"
     a "(환호성)"
