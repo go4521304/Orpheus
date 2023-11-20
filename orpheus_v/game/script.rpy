@@ -29,7 +29,8 @@ label start:
     show sample_tv opening_1 at truecenter with dissolve
     "(DEVIL TV)"
     "새빨간 텔레비전에서 흥겨운 아나운서가 이야기를 전하고 있다"
-    show sample_tv opening_2 at truecenter with dissolve
+    show sample_th opening_3 at truecenter with dissolve
+    show ch_morpheus_2 at truecenter with dissolve
     m "하하하, 안녕하세요 지옥의 주민 여러분! 하이고! 600년만에 방송이네요!"
     m "안방 극장, 에스카토스! 시즌 666이 이제 곧 시작하려고 합니다!"
     a "(환호성)"
@@ -38,11 +39,18 @@ label start:
     "(무언가 스태프가 말을 하자 알아들으며)"
     m "음음! 그렇죠, 그래도 새로운 시즌의 시작이니 지옥의 유일무이한 엔터테인먼트를 잊어버리신 친구 모두를 위해서"
     m "다시 한 번 에스카토스에 대해서 설명해드리겠습니다."
+    hide ch_morpheus_2 with dissolve
+    show sample_th opening_2 with dissolve
+    show ch_morpheus_4 at truecenter with dissolve
     m "영상 보고 오시죠"
     "에스카토스, 지옥 여러분들의 크고 작은 소망과 염원을 영원의 잠에 취하신 하데스님에게 전달하고"
     "그 특별한 역할을 맡게 된 전달자의 소원을 이루어 주는 굉장히 아름답고 설레이는 축제입니다."
+    hide ch_morpheus_4 with dissolve
+    show ch_morpheus_1 at truecenter with dissolve
     m "그리고 그 전달의 고난과 역경의 순간들을 여러분들에게 보여주는 것이 저와 우리 데빌 티비 스태프의 역할이죠."
     a "(야유하는 소리)"
+    hide ch_morpheus_1 with dissolve
+    show ch_morpheus_4 at truecenter with dissolve
     m "네? 틀렸다고요? 전혀 아니야? 사실 여러분들이 맞습니다. 아름다운거 그런거 전혀 필요없죠! 우리가 원하는건 뭐?"
     a "(고통!)"
     m "뭐라고?"
@@ -52,20 +60,25 @@ label start:
     m "역시, 여러분. 전 여러분들이, 지옥이, 너무 좋습니다. 언제나 두근두근하거든요!"
     "(다시 스태프가 말을 하자 놀란 눈치로)"
     m "예? 벌써요? 서론은 여기까지 하고, 여러분! 도착했다고 합니다!"
+    hide ch_morpheus_4 with dissolve
+    show ch_morpheus_1 at truecenter with dissolve
     m "오래 기다리셨습니다!"
     m "우리의 새로운 스타, 독사 따위에 물려 죽은 아내를 구하기 위해! (흑흑흑!)"
     m "어머 너~ 무 로맨틱! 무려 이곳 지옥까지 행차하신~ 그 이름은 바로~~"
-
+    scene bg1 with fade
+    show ch_morpheus_5 at truecenter with dissolve
     "아나운서가 텔레비전 속에서 당신을 가리킨다"
     m "(조용하면서 멋있는 목소리로) 오르페우스, 당신이야."
     a "하하하하핳ㅎ하ㅏㅏ하하ㅏ하ㅏ하하"
     a "(비웃음, 웃음소리, 비명 소리, 깨지는 소리, 기타 등등)"
+    hide ch_morpheus_5 with dissolve
+    show ch_morpheus_2 at truecenter with dissolve
     m "(아나운서 톤으로) 에스카토스 시즌 666, 오르페우스 극장은 박하콜라, 에우레얄레 잡화점과 함께합니다."
     m "광고 보고 오시죠!"
 
     "(광고)"
 
-
+    scene btv1 with fade
     "1. Avernus (아베르누스: 지옥 입구)"
 
     "어둠이다."
@@ -75,9 +88,12 @@ label start:
     q "어이, 정신이 드냐? 흐헤헿.."
     "하지만 그런 것을 신경 쓸 시간은 없다고 판단한 나는 자리에서 일어났다."
     q "어이, 무시하는 거냐? 이 구더기의 왕을?"
+    show ch_maggot_2 at truecenter with dissolve
     "옆을 슬쩍 바라보자 작은 짐승만한 구더기 한 마리가 같은 길을 기어가고 있었다."
     "아무런 옷가지도 걸치지 않은, 벌거벗은 구더기였다. 애초에 무언가를 걸친 구더기가 있을 리가 없지만"
     "어찌되었든 왕의 지위에 걸맞는 행색은 아니었다."
+    hide ch_maggot_2 with dissolve
+    show ch_maggot_3 at truecenter with dissolve
     q "뭘 그리 골똘히 생각하나 그래, 응? 가슴이 절망으로 가득 찰 생각을 하니 두근두근 거리는구나, 그렇지? 흐헤헤헤헿헤"
     o "조용히 해."
     "그래, 조용히 해라. 나는 시답지 않은 농담을 주고받을 정도로 시간이 있는 것이 아니었다."
@@ -86,6 +102,8 @@ label start:
     q "뭐야 그 눈빛은.. 설마, 내가, 아니, 지옥의 모든 쓰래기들이 너를 모른다고 생각하는 건 아니겠지?"
     "구더기는 고개를 절레절레 흔들었다. 그 짤막한 몸뚱어리에서 흘러나온 기분 나쁜 누런 액체가 나의 얼굴에 튀었다."
     q "하! 죽은 아내를 되찾으러 단신으로 지옥에 뛰어든 미친놈아, 잘들어."
+    hide ch_maggot_3 with dissolve
+    show ch_maggot_1 at truecenter with dissolve
     q "넌 이미 유명인이야. 내 이름은 매곳! 지옥은 널 환영한다! 그리고 너의 선택을 후회하게 만들 자신이 있지."
     o "그래, 여기가 시험대란 말인가?"
     "그 말을 들은 구더기가 나불거리던 입을 싹 닫았다. 구더기는 정말 모르겠냐? 라는 표정을 짓고 있었다."
@@ -108,9 +126,11 @@ label start:
     "아니다, 빨리 앞으로 나아가야한다"
     "나는 구더기를 뒤로 하고 앞으로 나아갔다."
 
+    scene sample_th opening_2 with fade
 
     "다시 텔레비전"
 
+    show ch_morpheus_2 at truecenter with dissolve
     m "태양신 아폴론님과 뮤즈 칼리오페 사이에서 태어난 젊은 악사 오르페우스는"
     m "신의 재능을 이어받아 세계에서 제일 아름다운 리라 연주를 선보이곤 했습니다."
     m "아르고호 대원정에서 세이렌을 리라 연주로 잠재웠을 만큼 굉장한 실력의 소유자!"
@@ -122,47 +142,59 @@ label start:
     m "정말 슬픕니다. (흑흑) 하지만 이 정도의 사랑과 의지가 있어야 에스카토스에 어울리는 멍청한 전달자라고 할 수 있겠죠!"
     m "(점잖은 목소리로) 여러분, 오래 기다리셨습니다. 오르페우스 극장, 그 어리석은 시작을 알리는 대망의 첫 곡은.."
     "슈베르트의 송어."
-
+    hide ch_morpheus_2 with dissolve
     "(튜토리얼 시작)"
     "(곡이 끝나고)"
 
+    show ch_morpheus_1 at truecenter with dissolve
     m "멋집니다, 그의 사랑을 위한 도전! 몇 번을 죽어도 다시 한 번!"
+    scene sample_roulette_1 with fade
     m "그런 당신을 위해 룰렛! 아 룰렛 빠질 수 없죠! 바로 돌립니다! 고고고~"
     m "아이고 이게 뭐람! 이러면 망했죠! 오르페우스, 좀 더 잘 돌렸어야죠!"
 
+    scene btv1 with fade
     "1-1. 스틱스 강 (건너뛰기)"
 
+    show ch_or_std_1 at truecenter with dissolve
     "지옥의 입구에서 얼마나 나아갔을까"
     "지쳐 나가 떨어질 만큼 어둠을 헤집고 나오자 보인 것은 바다 같이 끝없이 펼쳐진 검은 물이었다."
     "소름이 끼칠 정도로 두려움이 엄습하는 것을 알 수 있었다."
-    "본능적으로 느낄 수 있었다. 이곳이 죽음을 맞이하는 관문이라는 것을." 
+    "본능적으로 느낄 수 있었다. 이곳이 죽음을 맞이하는 관문이라는 것을."
+    hide ch_or_std_1 with dissolve
     "물가에는 작은 배와 거대한 뱃사공, 그리고 배에 탑승하려는 죽은 이들로 넘쳐났다."
     "어느 쪽이건 흉물스러운 몰골, 악취, 스산한 기운이 이곳은 오로지 망자의 길이라고 말하는 것 같았다."
+    show ch_charon_2 at truecenter with dissolve
     cha "너. 못 탄다."
     "망자에 어울려 배에 탑승하려던 나를 뱃사공이 막아섰다. 카론, 죽음을 인도하는 지옥의 뱃사공이었다."
     o "아니, 타겠습니다."
     cha "금화, 있나?"
     "그가 뱃삯을 바라며 검은 손을 내밀었다. 하지만 내게는 아무것도 없었다."
     cha "금화, 없다."
+    hide ch_charon_2 with dissolve
     "고개를 좌우로 흔들자 뱃사공은 얼굴을 찌뿌리며 배에서 노를 집어 들었다. 그때 나는."
 
     "리라로 공격을 막으며 반격태세를 갖추었다 (보스 배틀) / 리라로 아름다운 선율을 연주했다 (건너뛰기)"
 
     "리라로 공격을 막으며 반격태세를 갖추었다 (보스 배틀)"
     "배틀 이후"
+    show ch_charon_1 at truecenter with dissolve
     cha "나약하다. 하지만 의지 있다. 타라."
     "리라로 아름다운 선율을 연주했다 (건너뛰기)"
     cha "금화만큼 좋다. 타라."
 
 
+    scene btv1 with fade
     "1-1. 스틱스 강 (튜토리얼)"
 
+    show ch_or_std_1 at truecenter with dissolve
     "지옥의 입구에서 얼마나 나아갔을까"
     "지쳐 나가 떨어질 만큼 어둠을 헤집고 나오자 보인 것은 바다 같이 끝없이 펼쳐진 검은 물이었다."
     "소름이 끼칠 정도로 두려움이 엄습하는 것을 알 수 있었다."
+    hide ch_or_std_1 with dissolve
     "본능적으로 느낄 수 있었다. 이곳이 죽음을 맞이하는 관문이라는 것을."
     "물가에는 작은 배와 거대한 뱃사공, 그리고 배에 탑승하려는 죽은 이들로 넘쳐났다." 
     "어느 쪽이건 흉물스러운 몰골, 악취, 스산한 기운이 이곳은 오로지 망자의 길이라고 말하는 것 같았다."
+    show ch_charon_2 at truecenter with dissolve
     cha "너. 못 탄다."
     "망자에 어울려 배에 탑승하려던 나를 뱃사공이 막아섰다. 카론, 죽음을 인도하는 지옥의 뱃사공이었다."
     o "아니, 타겠습니다."
@@ -171,12 +203,18 @@ label start:
     cha "금화라니, 기쁘구나."
 
 
+    scene btv1 with fade
     o "이건 뭐지?"
     "아무것도 모른 체 앞으로 나아가던 나는 문득 이상한 점을 느꼈다."
+    show tv_main_1 at truecenter with dissolve
     "시선이 느껴졌다. 굉장히 기분 나쁜 시선들."
     "정육면체의 물체에서는 그림이 계속 바뀌며 흥미를 유발하고 있었다."
+    hide tv_main_1 with dissolve
+    show ch_maggot_4 at truecenter with dissolve
     ma "뭐야, 텔레비전 몰라? 아, 그래. 지옥은 처음이었지."
     ma "간단히 말하자면, 미래의 물건이다. 지옥은 시간의 개념이 희박하지. 뒤틀려 있거든."
+    hide ch_maggot_4 with dissolve
+    show ch_maggot_1 at truecenter with dissolve
     ma "오늘 죽은 사람이나, 미래에 죽은 사람이나 모두 같은 공간에 있는 거다. 만들어지는 것도 비슷하지."
     o "그렇군.."
     ma "그리고 너가 멍청하게 시련이다 뭐다 하는건"
@@ -184,10 +222,16 @@ label start:
     ma "넌 지금 지옥 최고의 장난감이야! 하하하하하하!"
 
 
+    scene bg1 with fade
+    show ch_morpheus_1 at truecenter with dissolve
     m "아, 벌써 하데스님께 향하는 튜토리얼을 겨우 통과한 오르페우스! 역시 최강 최흉의 머저리군요!"
     m "투철한 사랑의 힘으로 어디까지 가는겁니까! 이런 멋진 날에는 인터뷰를 빼놓을 수 없겠죠. 그럼 바로 불러보도록 하겠습니다."
+    hide ch_morpheus_1 with dissolve
+    show ch_or_std_1 at truecenter with dissolve
     "모르페우스가 손가락을 튕기자 무대가 회전하더니 게임을 막 통과해 기진맥진한 오르페우스가 보인다."
     "갑작스런 환경의 변화에 경계를 하듯 무기를 움켜쥐는 오르페우스." 
+    hide ch_or_std_1 with dissolve
+    show ch_morpheus_2 at truecenter with dissolve
     m "아아, 가여운 것. 아직도 이러고 있군요."
     m "지옥 여러분, 에스카토스 시즌 666의 주인공 오르페우스에게 따뜻한 동정의 박수 부탁드립니다!"
     a "괴물들의 비웃음, 박수, 야유"
@@ -196,19 +240,27 @@ label start:
 
 
 
-    #레이트 나잇 쇼 
+    #레이트 나잇 쇼
+    scene world with fade
     tele "지옥에서 제일 멋진 빌딩!"
     tele "지옥에서 가장 재밌는 데빌TV!"
+    scene sample_th opening_3
     tele "지옥에서 최고로 잔혹한 쇼! 에스카토스에서 보내드립니다!"
+    show ch_morpheus_1 at truecenter with dissolve
     m "안녕하세요, 여러분의 꿈을 짓밟아주는 사랑의 지옥 버라이어티 쇼"
     m "오늘의 메뉴는 '질투의 인터뷰', '음욕의 콘서트', 그리고 '나태의 이세계"
+    scene sample_curtain call_1 with fade
     m "아들래미 하나 때문에 모든걸 빼앗기고 추락한 엄청난 바보가 나오구요"
     m "3만년만의 신곡을 들고 나온 3인조와"
     m "최초의 무언가! 이건 스포일러 금지라고 하네요"
+    scene sample_th opening_3 with fade
+    show ch_morpheus_2 at truecenter with dissolve
     a "환호"
     m "모두들 감사합니다!"
     ma "에스카토스에 오신걸 환영해요"
     m "에스카토스의 귀여운 미친 놈! 당신의 영원한 쇼 호스트 모르페우스 입니다❤"
+    hide ch_morpheus_2 with dissolve
+    show ch_maggot_1 at truecenter with dissolve
     ma "저는 쇼 어시스턴트 '매곳'(구더기) 입니다"
     m "이거 정말 멋진 관객이군요"
     ma "지옥에는 정말 최고의 관객분들만 모여있군요"
