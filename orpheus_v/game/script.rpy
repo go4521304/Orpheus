@@ -16,6 +16,13 @@ define tele = Character('방송국', color="#da1111")
 
 # 여기에서부터 게임이 시작합니다.
 label start:
+    transform slightleft:
+        xalign 0.25
+        yalign 0.5
+
+    transform slightright:
+        xalign 0.75
+        yalign 0.5
 
     scene btv1 with fade 
     "0. Eschatos"
@@ -160,10 +167,12 @@ label start:
     "지쳐 나가 떨어질 만큼 어둠을 헤집고 나오자 보인 것은 바다 같이 끝없이 펼쳐진 검은 물이었다."
     "소름이 끼칠 정도로 두려움이 엄습하는 것을 알 수 있었다."
     "본능적으로 느낄 수 있었다. 이곳이 죽음을 맞이하는 관문이라는 것을."
-    hide ch_or_std_1 with dissolve
+    show ch_or_std_1 at slightleft
+    with move
     "물가에는 작은 배와 거대한 뱃사공, 그리고 배에 탑승하려는 죽은 이들로 넘쳐났다."
     "어느 쪽이건 흉물스러운 몰골, 악취, 스산한 기운이 이곳은 오로지 망자의 길이라고 말하는 것 같았다."
-    show ch_charon_2 at truecenter with dissolve
+    show ch_charon_2 at slightright
+    with move
     cha "너. 못 탄다."
     "망자에 어울려 배에 탑승하려던 나를 뱃사공이 막아섰다. 카론, 죽음을 인도하는 지옥의 뱃사공이었다."
     o "아니, 타겠습니다."

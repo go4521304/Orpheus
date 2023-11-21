@@ -1221,7 +1221,7 @@ style skip_text:
 
 style skip_triangle:
     ## BLACK RIGHT-POINTING SMALL TRIANGLE 글리프가 있는 글꼴을 사용해야 합니다.
-    font "DejaVuSans.ttf"
+    font "PyeongChangPeace-Bold.ttf"
 
 
 ## Notify 스크린 ##################################################################
